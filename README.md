@@ -7,7 +7,6 @@ https://github.com/ultralytics/yolov5/releases/tag/v4.0
 train: 
 
 $ python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 48
-
                                    --cfg yolov5saa                               
                                    --cfg yolov5sse                                
                                    --cfg yolov5seca  
