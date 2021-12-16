@@ -10,7 +10,7 @@ python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 48
 
 python train.py --data coco.yaml --cfg yolov5saa.yaml --weights '' --batch-size 48
 
-python train.py --data coco.yaml --cfg yolov5saa.yaml --weights '' --batch-size 48
+python train.py --data coco.yaml --cfg yolov5sse.yaml --weights '' --batch-size 48
 
 python train.py --data coco.yaml --cfg yolov5seca.yaml  --weights '' --batch-size 48
 
