@@ -8,7 +8,7 @@ sys.path.append('./')  # to run '$ python *.py' files in subdirectories
 logger = logging.getLogger(__name__)
 
 from models.common import *
-from models.common import eca_layer, C3spa3, C3eca, C3se, C3spa3se, C3ssa, C3, C3spa3no
+from models.common import eca_layer, C3spa3, C3eca, C3se, C3spa3se, C3ssa, C3, C3spa3no, SPPF
 from models.experimental import MixConv2d, CrossConv
 from utils.autoanchor import check_anchor_order
 from utils.general import make_divisible, check_file, set_logging
@@ -211,7 +211,7 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
                 pass
 
         n = max(round(n * gd), 1) if n > 1 else n  # depth gain
-        if m in [Conv, Bottleneck, SPP, DWConv, MixConv2d, Focus, CrossConv, BottleneckCSP, C3, C3eca, C3spa3, C3se, C3spa3se, C3ssa, C3spa3no]:
+        if m in [Conv, Bottleneck, SPP, SPPF, DWConv, MixConv2d, Focus, CrossConv, BottleneckCSP, C3, C3eca, C3spa3, C3se, C3spa3se, C3ssa, C3spa3no]:
             c1, c2 = ch[f], args[0]
 
             # Normal
