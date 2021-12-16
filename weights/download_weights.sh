@@ -1,5 +1,5 @@
 #!/bin/bash
-# Download latest models from https://github.com/ultralytics/yolov5/releases
+# Download latest models from https://github.com/ultralytics/yolov5/releases/v4.0
 # Usage:
 #    $ bash weights/download_weights.sh
 
